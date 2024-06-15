@@ -80,32 +80,21 @@ in the `barseq-raw/testRes` directory.
 snakemake --use-conda --conda-frontend conda remove_zeros  --cores 1 -F --config output_dir=barseq-raw/testRes -p
 ~~~
 
-### Generate Visualizations
-To visualize ranked male fertility and female fertility, as well as create a scatter plot of male vs. female fertility, you can utilize the following command.
+### Count matrix to conversion rate
+To convert the count matrix to the oocyst conversion rate for (homing-) screen, use this script:
 ~~~
-snakemake --use-conda --conda-frontend conda plot_fertility  --cores 1 -F
-~~~
-
-We performed an enrichment analysis using the Malaria Parasite Metabolic Pathways (MPMP) for male and female-only fertility phenotypes. For this use following command.
-
-~~~
-snakemake --use-conda --conda-frontend conda mpmp_enrichment  --cores 1 -F
+python codes/rawToConversion.py
 ~~~
 
-We visualize the enrichment of top-ranked pathways (male/female) using violin plots with the following commands.
+To convert the count matrix to the oocyst conversion rate for (homing+) screen, use this script:
 
 ~~~
-snakemake --use-conda --conda-frontend conda mpmp_violin  --cores 1 -F
+python codes/rawToConversion_homing.py codes/rawToConversionRate.py
 ~~~
 
-To investigate the relationship between fertility phenotypes and gene expression, we visualized genes associated with male and female-only fertility phenotypes within the Malaria Cell Atlas (mca) gene expression-based clusters.
+### Plot figures
+To generate figures, use this script:
+~~~
+python codes/plotFigures.py
+~~~
 
-~~~
-snakemake --use-conda --conda-frontend conda mca_gene_plot  --cores 1 -F
-~~~
-
-To filter out noisy data, we generated a plot of relative abundance against relative error. Our analysis revealed that data with a relative abundance below the cutoff value of log2(-12) exhibited unacceptably high errors, making it unsuitable for further analysis.
-
-~~~
-snakemake --use-conda --conda-frontend conda error_plot  --cores 1 -F
-~~~

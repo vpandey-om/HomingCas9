@@ -1,0 +1,14 @@
+2023-10-17 14:13 - INFO - barseq - ***** Starting barseq *****
+2023-10-17 14:13 - INFO - barseq - Reading in barcodes from barcode_to_gene_210920.csv
+2023-10-17 14:13 - INFO - barseq - Counting Barcodes in P13459_3001_S1_L001_R1_001
+2023-10-17 14:13 - INFO - process_reads_fast - For forward P13459_3001_S1_L001_R1_001.fastq, 0 of 60626 (0.0%) matched known barcodes.
+2023-10-17 14:13 - INFO - process_reads_fast - Reads without barcode match: 60626 (100.0%) for P13459_3001_S1_L001_R1_001.fastq
+2023-10-17 14:13 - INFO - process_reads_fast - For reverse P13459_3001_S1_L001_R1_001.fastq, 44715 of 60626 (73.76%) matched known barcodes.
+2023-10-17 14:13 - INFO - process_reads_fast - Reads without barcode match: 15911 (26.24%) for P13459_3001_S1_L001_R1_001.fastq
+2023-10-17 14:13 - INFO - barseq - Counting Barcodes in P13459_3001_S1_L001_R2_001
+2023-10-17 14:13 - INFO - process_reads_fast - For forward P13459_3001_S1_L001_R2_001.fastq, 43961 of 60626 (72.51%) matched known barcodes.
+2023-10-17 14:13 - INFO - process_reads_fast - Reads without barcode match: 16665 (27.49%) for P13459_3001_S1_L001_R2_001.fastq
+2023-10-17 14:13 - INFO - process_reads_fast - For reverse P13459_3001_S1_L001_R2_001.fastq, 0 of 60626 (0.0%) matched known barcodes.
+2023-10-17 14:13 - INFO - process_reads_fast - Reads without barcode match: 60626 (100.0%) for P13459_3001_S1_L001_R2_001.fastq
+2023-10-17 14:13 - INFO - barseq - Writing results to barseq-raw/result2
+2023-10-17 14:13 - INFO - barseq - ***** barseq is complete! *****
