@@ -9,7 +9,7 @@ In our study, we transfected into male  only lines with either homing vector or 
 
 On day 0, the male mutants transfected  with either  PlasmoGEMvectororhoming vector were separately fed to mosquitoes in duplicate: "Mosquito Feed 1" (MF1, indicated by blue dots) and "Mosquito Feed 2" (MF2, indicated by red dots). For each mosquito feed, we collected one day 0 input sample. Therefore, on day 0, we generated a total of four samples.
 
-On day 13 or 14, we collected output samples from each mosquito feed in duplicate. Consequently, on day 13 or 14, we generated a total of eight samples. 
+On day 13 or 14, we collected output samples from each mosquito feed in duplicate. Consequently, on day 14, we generated a total of eight samples for each set. 
 
 ![Sample description](https://github.com/vpandey-om/Fertility_screen/blob/master/output/sample.png)
 
